@@ -1,3 +1,21 @@
+@font-face {
+    src: url("./fonts/BarlowCondensed-Regular.ttf");
+    font-family: "Barlow Condensed";
+    font-weight: normal;
+}
+
+@font-face {
+    src: url("./fonts/BarlowCondensed-SemiBold.ttf");
+    font-family: "Barlow Condensed";
+    font-weight: bold;
+}
+
+@font-face {
+    src: url("./fonts/Montserrat-Regular.ttf");
+    font-family: "Montserrat";
+    font-weight: normal;
+}
+
 :root {
     background-color: #f7f7f7;
     font-size: 62.5%;
@@ -26,11 +44,14 @@ main h1 {
     margin: 0px;
     font-size: 1.8rem;
     font-weight: normal;
+    font-family: "Barlow Condensed";
+    font-weight: bold;
 }
 
 main p {
     margin: 0px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    font-family: "Montserrat";
 }
 
 .image-container {
@@ -86,10 +107,13 @@ main p {
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 28px;
 }
 
 .form-container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-left: var(--content-left-spacing);
 }
 
@@ -107,10 +131,34 @@ form button {
     border-radius: 4px;
     color: #f7f7f7;
     margin-left: var(--content-left-spacing);
+    font-family: "Barlow Condensed";
+    font-size: 1.4rem;
 }
 
 form p {
     margin-left: var(--content-left-spacing);
+    font-size: 1.4rem;
+}
+
+form label {
+    font-family: "Barlow Condensed";
+    font-size: 1.6rem;
+}
+
+form input {
+    font-family: "Barlow Condensed";
+    font-size: 1.4rem;
+    border-color: #E5E7EB;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+form input:focus {
+    box-shadow: 2px 2px 4px #636363;
+}
+
+form input:invalid {
+    border-color: #e02d2d;
 }
 
 .form-contents {
@@ -141,8 +189,4 @@ form p {
 .form-field {
     display: flex;
     flex-direction: column;
-}
-
-form label {
-    font-size: 1.4rem;
 }
