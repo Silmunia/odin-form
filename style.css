@@ -157,7 +157,7 @@ form input:focus {
     box-shadow: 2px 2px 4px #636363;
 }
 
-form input:invalid {
+form input:invalid, .input-error {
     border-color: #e02d2d;
 }
 
@@ -189,4 +189,11 @@ form input:invalid {
 .form-field {
     display: flex;
     flex-direction: column;
+}
+
+.form-field p {
+    margin: 0px;
+    font-size: 1.2rem;
+    color: #e02d2d;
+    visibility: hidden;
 }
